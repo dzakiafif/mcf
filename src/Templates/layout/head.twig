@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta http-equiv="x-ua-compatible" content="IE/edge">
+
+        <title>Malang Creative Fusion - Administrator</title>
+
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+        <link rel="stylesheet" href="{{ app.request.basepath }}/assets/bootstrap/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="{{ app.request.basepath }}/assets/dist/fonts/font-awesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="{{ app.request.basepath }}/assets/dist/fonts/icomoon/icomoon.css">
+
+        <link rel="stylesheet" href="{{ app.request.basepath }}/assets/plugins/datatables/dataTables.bootstrap.css">
+
+        <link rel="stylesheet" href="{{ app.request.basepath }}/assets/dist/css/AdminLTE.min.css">
+
+        <link rel="stylesheet" href="{{ app.request.basepath }}/assets/dist/css/skins/_all-skins.min.css">
+
+        <link rel="stylesheet" href="{{ app.request.basepath }}/assets/dist/css/global.css">
+        {% block customCSS %}
+        {% endblock %}
+        <link rel="icon" href="{{ app.request.basepath }}/assets/dist/img/cart-icon.png">
+    </head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="{{ ('/home') }}" class="logo">
+                <span class="logo-mini"></span>
+                <span class="logo-lg"></span>
+            </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="user">
+                        <a href="{{ ('/logout') }}" class="glyphicon glyphicon-log-out">LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="{{ app.request.basepath }}/assets/dist/img/avatar5.png" class="img-circle" />
+                    </div>
+                    <div class="pull-left info">
+
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <div>
+            <div class="control-sidebar-bg"></div>
+        </div>
+    </div>
+    <script src="{{ app.request.basepath }}/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/plugins/fastclick/fastclick.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/dist/js/app.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/dist/js/demo.js"></script>
+</body>
+</html>
